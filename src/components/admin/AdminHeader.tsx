@@ -100,7 +100,7 @@ export const AdminHeader: React.FC = () => {
                 <Globe className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent modal={false} className="bg-card shadow-md rounded-md max-h-60 overflow-y-auto z-50">
               <DropdownMenuItem onClick={() => setLanguage('en')}>
                 English
               </DropdownMenuItem>
@@ -137,7 +137,7 @@ export const AdminHeader: React.FC = () => {
                 )}
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent modal={false} className="bg-card shadow-md rounded-md max-h-60 overflow-y-auto z-50">
               <DropdownMenuItem>
                 <Settings className="h-4 w-4 mr-2" />
                 Settings
